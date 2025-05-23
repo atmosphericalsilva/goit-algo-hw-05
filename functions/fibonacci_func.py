@@ -1,4 +1,4 @@
-def cache_fibonacci(cache = {}): # creating cache dict
+def caching_fibonacci(cache = {}): # creating cache dict
     def fibonacci(n):
         # checking if the value is already in cache
         if n in cache:
@@ -19,4 +19,4 @@ def cache_fibonacci(cache = {}): # creating cache dict
 
 
 # closure
-fibo = cache_fibonacci()
+fibo = caching_fibonacci()

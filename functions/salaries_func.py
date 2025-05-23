@@ -9,10 +9,10 @@ def generator_numbers(text):
     n = 0
     # generating numbers
     while n < len(nums):
-        yield int(nums[n])
+        yield float(nums[n])
         n += 1
 
 
-def sum_profit(gen_func: Callable[[str], list], text: str):
+def sum_profit(text: str, gen_func: Callable[[str], list]):
     # summing up numbers in string
     return sum(gen_func(text)) 

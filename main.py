@@ -15,7 +15,7 @@ gen = salaries_func.generator_numbers(text)
 print(f'fibonacci: {fibo(15)}')
 
 try:
-    print(f'sum of the profits: {salaries_func.sum_profit(salaries_func.generator_numbers, text)}')
+    print(f'sum of the profits: {salaries_func.sum_profit(text, salaries_func.generator_numbers)}')
     for _ in range(5):
         print(next(gen))
 except StopIteration:
